@@ -1,0 +1,121 @@
+<!-- <section id="portfolio" class="text-center">
+    <div [class.d-none]="imgSrc.length == 0"  class="overlay-pic position-fixed top-0 bottom-0 start-0 end-0 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+        <img [src]="imgSrc" alt="" class="w-50">
+    </div>
+    <div class="header-section">
+        <h2 class="text-center pt-4">PORTFOLIO COMPONENT</h2>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-4">
+                <div (click)="displayPic()" class="inner position-relative rounded-2 overflow-hidden">
+                    <img src="../../assets/imgs/poert1.png" alt="" class="img-fluid">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="displayPic()" class="inner position-relative rounded-2 overflow-hidden">
+                    <img src="../../assets/imgs/port2.png" alt="" class="img-fluid">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="displayPic()" class="inner position-relative rounded-2 overflow-hidden">
+                    <img src="../../assets/imgs/port3.png" alt="" class="img-fluid">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="displayPic()" class="inner position-relative rounded-2 overflow-hidden">
+                    <img src="../../assets/imgs/poert1.png" alt="" class="img-fluid">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="displayPic()" class="inner position-relative rounded-2 overflow-hidden">
+                    <img src="../../assets/imgs/port2.png" alt="" class="img-fluid">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div (click)="displayPic()" class="inner position-relative rounded-2 overflow-hidden">
+                    <img src="../../assets/imgs/port3.png" alt="" class="img-fluid">
+                    <div class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+
+
+<!-- <img src="../../assets/imgs/poert1.png" class="w-25" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+
+<!-- Modal -->
+<!-- <div class="modal mt-" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <img src="../../assets/imgs/poert1.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div> -->
+
+
+
+<!-- test -->
+
+
+<section id="portfolio" class="text-center">
+    <!-- <div [class.d-none]="imgSrc.length == 0"
+        class="overlay-pic position-fixed top-0 bottom-0 start-0 end-0 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center">
+        <img [src]="imgSrc" alt="" class="w-50">
+    </div> -->
+    <div class="header-section">
+        <h2 class="text-center pt-4">PORTFOLIO COMPONENT</h2>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div *ngFor="let img of allImgSrc" class="col-md-4">
+                <div (click)="displayPic(img)" class="inner position-relative rounded-2 overflow-hidden"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="{{img}}" alt="" class="img-fluid">
+                    <div
+                        class="layer position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+
+                <div class="modal bg-primary bg-opacity-25" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <img src="{{layerSrc}}" class="img-fluid" alt="">
+                        </div>
+                          
+                    </div>
+
+                    <!-- end modal -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

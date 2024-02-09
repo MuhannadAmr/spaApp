@@ -1,0 +1,33 @@
+#about{
+    background-color: #1abc9c;
+    height: 80vh;
+}
+h2{
+    font-weight: bolder;
+    font-size: 40px;
+}
+i{
+    position: relative;
+}
+i::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 4px;
+    
+}
+i::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 4px;
+    
+}

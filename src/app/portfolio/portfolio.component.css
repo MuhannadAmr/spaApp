@@ -1,0 +1,53 @@
+.overlay-pic{
+    z-index: 9999;
+
+}
+h2{
+    font-weight: bolder;
+    font-size: 40px;
+    color: #2c3e50;
+    
+}
+.header-section i{
+    position: relative;
+    color: #2c3e50;
+}
+.header-section i::before{
+    content: "";
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 4px;
+    
+}
+.header-section i::after{
+    content: "";
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 4px;
+    
+}
+.inner{
+    cursor: pointer;
+}
+.layer{
+    background-color: #1abc9ce6;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.layer:hover{
+    opacity: 1;
+}
+/* .modal{
+    --bs-modal-width: 40%;
+}
+.modal-dialog{
+    margin-top: 10%;
+} */

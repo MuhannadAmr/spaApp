@@ -1,0 +1,73 @@
+h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #2c3e50;
+
+}
+
+.header-contact i {
+    position: relative;
+    color: #2c3e50;
+}
+
+.header-contact i::before {
+    content: "";
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 4px;
+
+}
+
+.header-contact i::after {
+    content: "";
+    background-color: #2c3e50;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 4px;
+
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    /* display: none; */
+    transition: all 0.4s;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    z-index: -1;
+
+}
+
+.bottom-25 {
+    bottom: 25px;
+}
+
+.bottom-70 {
+    bottom: 70px;
+    transition: all 0.4s;
+}
+
+.col-md-12 {
+    position: relative;
+}
+
+button {
+    width: fit-content;
+}

@@ -1,0 +1,27 @@
+<section id="contact" >
+    <div class="header-contact py-4 text-center">
+        <h2>CONATCT SECTION</h2>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contact-input w-50 mx-auto">
+        <div class="row py-5">
+            <div class="col-md-12 py-4">
+                <label [class]="showName ? 'bottom-70' : 'bottom-25'" for="userName" class="text-primary">userName :</label>
+                <input (keyup)="toggle()" [(ngModel)]="userName" id="userName"  type="text" placeholder="userName" class="w-100">
+            </div>
+            <div class="col-md-12 py-4">
+                <label [class]="showAge ? 'bottom-70' : 'bottom-25'" for="userAge" class="text-primary">userAge :</label>
+                <input (keyup)="toggle()" [(ngModel)]="userAge" id="userAge" type="text" placeholder="userAge" class="w-100">
+            </div>
+            <div class="col-md-12 py-4">
+                <label [class]="showEmail ? 'bottom-70' : 'bottom-25'" for="userEmail" class="text-primary">userEmail :</label>
+                <input (keyup)="toggle()" [(ngModel)]="userEmail" id="userEmail" type="text" placeholder="userEmail" class="w-100">
+            </div>
+            <div class="col-md-12 py-4">
+                <label [class]="showPassword ? 'bottom-70' : 'bottom-25'" for="userPassword" class="text-primary">userPassword :</label>
+                <input (keyup)="toggle()" [(ngModel)]="userPassword" id="userPassword" type="text" placeholder="userPassword" class="w-100">
+            </div>
+            <button class="btn btn-info text-white">send Message</button>
+        </div>
+    </div>
+</section>
